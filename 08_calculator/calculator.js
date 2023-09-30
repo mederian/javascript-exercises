@@ -36,8 +36,20 @@ const power = function(num, exp) {
   return res;
 };
 
-const factorial = function() {
-	
+
+// 1 x 2 x 3 x 4 =  4!
+// 1 = 0!
+// 1 = 1!
+// 2 = 2!
+// 6 = 3!
+const factorial = function(fact) {
+  const init = 1;
+  let res = 1;
+  for(i = init; i <= fact; i++){
+    res *= i;
+  }
+
+  return res;
 };
 
 // Do not edit below this line
